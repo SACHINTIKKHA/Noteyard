@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-link {
+    color: #38bdf8 !important;
+    font-weight: bold;
+}
+
+/* Register Box */
+.register-section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.register-card {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Inputs */
+.form-control {
+    background: #0f172a;
+    border: none;
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #38bdf8;
+}
+
+/* Button */
+.btn-gradient {
+    background: linear-gradient(45deg,#6366f1,#06b6d4);
+    border: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+}

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar (same as home) */
+.navbar {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-link {
+    color: #38bdf8 !important;
+    font-weight: bold;
+}
+
+/* Hero */
+.about-hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(to right,#1e293b,#0f172a);
+}
+
+.about-hero h1 span {
+    color: #38bdf8;
+}
+
+/* Section */
+.section {
+    padding: 60px 0;
+}
+
+/* Cards */
+.info-card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background: #020617;
+}
+.btn-gradient {
+    background: linear-gradient(45deg,#6366f1,#06b6d4);
+    border: none;
+    color: white;
+}
