@@ -1,7 +1,7 @@
 @extends('admin.layout')
 @section('main')
 <div class="container mt-5">
-    <div class="row justify-content-center">
+    <div class="row ">
         <div class="col-lg-8">
 
             <div class="card shadow-lg border-0 rounded-4">
@@ -56,7 +56,12 @@
                         </div>
 
                     </form>
-
+        @error('file')
+        <span class="text-danger">{{ $message }}</span>
+        @enderror
+        @error('validity')
+        <span class="text-danger">{{"validity range [50-365]"}}
+        @enderror
                 </div>
             </div>
 

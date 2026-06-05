@@ -52,7 +52,14 @@ Notepage
             </div>
         </div>
 @endforeach
+{{$notes->links()}}
 </div>
 </div>
 @endsection
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+    .w-5.h-5{
+        width:20px
+    }
+    </style>

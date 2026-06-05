@@ -49,7 +49,7 @@ Contact
                     <h4>Get in Touch</h4>
                     <p>📍 Lucknow, India</p>
                     <p>📧 support@ebookhub.com</p>
-                    <p>📞 +91 98765 43210</p>
+                    <p>📞 +91 96482 78536</p>
                     <hr>
                     <p>We usually respond within 24 hours.</p>
                 </div>

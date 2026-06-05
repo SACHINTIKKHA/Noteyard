@@ -63,10 +63,7 @@ Route::get('studentdel/{id}',[FileController::class,'stdel']);
 Route::get('subedit/{id}',[FileController::class,'subediting']);
 Route::post('subedit/new/{id}',[FileController::class,'subupdate'])->name('sub.update');
 Route::get('subdel/{id}',[FileController::class,'delsub']);
-
-
 });
-
 Route::post('/logout', [FileController::class,'exit'])->name('logout');
 Route::view('register','student.register');
 Route::get('home',[FileController::class,'freefile']);
@@ -85,12 +82,11 @@ Route::get('pay/{id}',[FileController::class,'next']);
 Route::view('about','aboutus');
 Route::view('contact','contactus');
 Route::post('studentlogindata', [FileController::class,'stlogin']);
-        Route::view('ebookpage','ebook.ebookpage');
-        Route::get('allfile',[FileController::class,'allfilesdata']);
-        Route::get('freefile',[FileController::class,'allfreefile']);
-        Route::get('ebook',[FileController::class,'ebooks']);
-        
-        Route::get('paidfile',[FileController::class,'allpaidfile']);
-        Route::get('downloadnotlogin/{id}',[FileController::class,'nologin'])->middleware('StudentAuth');
+Route::view('ebookpage','ebook.ebookpage');
+Route::get('allfile',[FileController::class,'allfilesdata']);
+Route::get('freefile',[FileController::class,'allfreefile']);
+Route::get('ebook',[FileController::class,'ebooks']);
+Route::get('paidfile',[FileController::class,'allpaidfile']);
+Route::get('downloadnotlogin/{id}',[FileController::class,'nologin'])->middleware('StudentAuth');
 
 

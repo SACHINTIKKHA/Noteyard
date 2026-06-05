@@ -23,7 +23,7 @@ AboutUs
             <div class="col-md-6">
                 <h2>Who We Are</h2>
                 <p>
-                    eBookHub is a platform designed for students and learners to access
+                    Noteyard is a platform designed for students and learners to access
                     high-quality notes, PDFs, and study materials for free.
                 </p>
                 <p>

@@ -1,6 +1,6 @@
 @extends('ebookfree.layout')
 @section('title')
-Notepage
+Noteyard
 @endsection
 @section('csslink')
 <link rel="stylesheet" href="{{asset('stylehome.css')}}">

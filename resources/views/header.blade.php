@@ -19,7 +19,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand text-white fw-bold" href="#">📚 eBookHub</a>
+        <a class="navbar-brand text-white fw-bold" href="#">📚 Noteyard</a>
 
         <button class="navbar-toggler text-white" data-bs-toggle="collapse" data-bs-target="#nav">
             ☰

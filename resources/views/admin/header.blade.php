@@ -1,6 +1,6 @@
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodlytix - Admin Dashboard</title>
+    <title>Noteyard</title>
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -178,7 +178,7 @@
 
             <div class="search-bar">
                 <i class="bi bi-search"></i>
-                <input type="text" placeholder="Search orders, customers, restaurants...">
+                <input type="text" placeholder="Search ebooks, articles, blogs...........">
             </div>
             
             <div class="top-bar-actions">
@@ -198,28 +198,40 @@
                         </div>
                     </div>
                  </div>
-                <div class="dropdown profile-dropdown">
-                     <div class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button">
-                         <div class="user-profile">
-                            <div class="user-avatar">AD</div>
-                            <div class="user-info">
-                                <h6>{{session('name')}}</h6>
-                                <p>Admin </p>
-                            </div>
-                        </div>
-                     </div>
-                     <ul class="dropdown-menu dropdown-menu-end mt-2">
-                         <li><h6 class="dropdown-header">Settings</h6></li>
-                         <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user"></i> Profile Settings</a></li>
-                         <li><a class="dropdown-item" href="#"><i class="fa-regular fa-bell"></i> Notifications</a></li>
-                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shield-halved"></i> Privacy &amp; Security</a></li>
-                         <li><a class="dropdown-item" href="#"><i class="fa-regular fa-credit-card"></i> Billing</a></li>
-                         <li><form action="{{route('logout')}}" method="post">
-                              @csrf
-                                <button type="submit">Logout</button>
-                            </form>
-                         </li>
-                     </ul>
+              <div class="dropdown profile-dropdown">
+    
+    <div class="dropdown-toggle d-flex align-items-center"
+         data-bs-toggle="dropdown"
+         data-bs-auto-close="outside"
+         aria-expanded="false"
+         role="button">
+
+        <div class="user-profile">
+            <div class="user-avatar">AD</div>
+
+            <div class="user-info">
+                <h6>{{ session('name') }}</h6>
+                <p>Admin</p>
+            </div>
+        </div>
+
+    </div>
+    <ul class="dropdown-menu dropdown-menu-end mt-2 p-3 text-center">
+
+        <li>
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+
+                <button type="submit" class="btn btn-danger w-100">
+                    <i class="fa-solid fa-right-from-bracket me-1"></i>
+                    Logout
+                </button>
+            </form>
+        </li>
+
+    </ul>
+
+</div>
                  </div>
 
             </div>

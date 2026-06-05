@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-LoginPage
+Student-LoginPage
 @endsection
 @section('csslink')
 <link rel="stylesheet" href="{{asset('stylehome.css')}}">

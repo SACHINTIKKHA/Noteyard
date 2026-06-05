@@ -23,7 +23,7 @@ Notepage
 
 <!-- Categories -->
 <div class="container text-center mt-4">
-    <a href="allfile"><button class="btn btn-outline-light  category-btn">All</button></a>
+    <a href="ebook"><button class="btn btn-outline-light  category-btn">All</button></a>
     <a href="freefile"><button class="btn btn-outline-light btn-primary category-btn">Free</button></a>
     <a href="paidfile"><button class="btn btn-outline-light category-btn">Paid</button></a>
 </div>
@@ -51,6 +51,7 @@ Notepage
             </div>
         </div>
 @endforeach
+{{$notes->links()}}
 </div>
 </div>
 @endsection

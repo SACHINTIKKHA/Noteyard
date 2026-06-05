@@ -1,6 +1,6 @@
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodlytix - Admin Dashboard</title>
+    <title>Noteyard</title>
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,7 @@
         <div class="sidebar-header">
             <a class="logo" href="index.html">
                 <i class="bi bi-basket2-fill"></i>
-                <span class="logo-text">Ebook</span>
+                <span class="logo-text">Noteyard</span>
             </a>
             <button class="menu-toggle" id="menuToggle">
                 <i class="bi bi-list"></i>
@@ -65,7 +65,7 @@
 
     <div class="search-bar">
         <i class="bi bi-search"></i>
-        <input type="text" placeholder="Search orders, customers, restaurants...">
+        <input type="text" placeholder="Search books, pdf, articles...">
     </div>
 
     <div class="top-bar-actions">
